@@ -29,7 +29,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 section {
@@ -54,7 +54,7 @@ footer {
 }
 
 
-/* CSS */
+/* BUTTON */
 .github_button {
   appearance: button;
   background-color: var(--primary_color);
@@ -103,14 +103,7 @@ footer {
   transform: translate(2px, 2px);
 }
 
-
-a{
-    text-decoration: none;
-    color: white;
-}
-a:hover {
-     color: #000;
-}
+/*MEDIA QUERIES*/
 @media (min-width: 768px) {
   .button-50 {
     padding: 12px 50px;
