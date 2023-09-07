@@ -1,13 +1,19 @@
-/* Add your CSS styles here */
+
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
+    /* background-color: #f0f0f0; */
+    background: url(img/bg_img.jpg)
 }
-
+:root{
+    --primary_color: #000;
+}
 header {
     text-align: center;
-    background-color: #007acc;
+    background-color: var(--primary_color);
     color: white;
     padding: 20px;
 }
@@ -23,18 +29,96 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    margin-top: 40px;
 }
 
 section {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    
+}
+p{
+    font-size: medium;
 }
 
 h2 {
-    color: #007acc;
+    color: var(--primary_color);
+    font-size: larger;
 }
 
 footer {
     text-align: center;
-    background-color: #f0f0f0;
     padding: 10px;
+}
+
+
+/* CSS */
+.github_button {
+  appearance: button;
+  background-color: var(--primary_color);
+  background-image: none;
+  border: 1px solid var(--primary_color);
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.github_button:focus {
+  text-decoration: none;
+}
+
+.github_button:hover {
+  text-decoration: none;
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+}
+
+.github_button:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.github_button:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+     color: #000;
+}
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 12px 50px;
+  }
+  p{
+    font-size: large;
+  }
+  h2{
+    font-size: x-large;
+  }
 }
